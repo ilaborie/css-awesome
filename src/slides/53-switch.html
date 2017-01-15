@@ -1,0 +1,16 @@
+---
+skip: devoxx
+---
+
+<style scoped contenteditable="true">input[type=checkbox].switch + label::before {
+  content: '';
+}
+input[type=checkbox].switch:checked + label::before {
+  content: '';
+}
+</style>
+
+<div class="editable">
+  <label>Switch OFF <input type="checkbox" class="switch"></label>
+  <label>Switch ON  <input type="checkbox" class="switch" checked></label>
+</div>

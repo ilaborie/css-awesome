@@ -1,0 +1,25 @@
+section a.previous::before,
+section a.next::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  z-index: 1;
+  height: 100%;
+}
+
+section:target {
+  a.previous::before {
+    left: 0;
+    width: var(--navigationWidth);
+    cursor: w-resize;
+    background: linear-gradient(to right, var(--bgNavigation), transparent);
+  }
+  a.next::after {
+    left: calc(100vw - var(--navigationWidth));
+    width: var(--navigationWidth);
+    cursor: e-resize;
+    background: linear-gradient(to left, var(--bgNavigation), transparent);
+  }
+}
+

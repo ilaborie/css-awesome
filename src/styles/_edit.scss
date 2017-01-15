@@ -1,0 +1,51 @@
+@keyframes ants {
+  to {
+    background-position: 100% 100%
+  }
+}
+
+style[contenteditable=true], pre {
+  z-index: 1;
+
+  @include innerSlideElement;
+  padding: .5em;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+
+  display: inline-block;
+  outline: 0;
+  white-space: pre;
+  tab-size: 2;
+
+  font-family: 'Fira Code', Menlo, Monaco, monospace;
+  font-size: .667em;
+
+  color: var(--fgCode);
+  background: var(--bgCode);
+
+  box-sizing: border-box;
+}
+
+style[contenteditable=true] {
+  border: .125em solid transparent;
+  background: linear-gradient(to left, var(--bgCode), var(--bgCode)) padding-box,
+  repeating-linear-gradient(-45deg, var(--fgBody) 0, var(--fgBody) 25%, transparent 0, transparent 50%) 0 / .6em .6em;
+  animation: ants 60s linear infinite;
+}
+
+.editable {
+  flex: 1 1 auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  @include innerSlideElement;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+
+  @include board;
+}
+
+.editable * {
+  //transform: scale(2);
+}

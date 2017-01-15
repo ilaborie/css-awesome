@@ -1,0 +1,15 @@
+#loader {
+
+  .editable {
+    font-size: 80%;
+    .loader {
+      transform: scale(4);
+      color: purple;
+      display: inline-block;
+      height: 1.3em;
+      white-space: pre;
+      margin-top: -0.3em;
+      vertical-align: text-bottom;
+    }
+  }
+}

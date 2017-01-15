@@ -1,0 +1,75 @@
+:root {
+  --extraTag: '';
+  --endTag: '@ilaborie';
+  --primary: #512470;
+  --secondary: #fff;
+  --alternate1: #e67f3a;
+  --alternate2: #e67f3a;
+
+  --bgBody: var(--secondary);
+  --fgBody: var(--primary);
+  --fontBody: OpenSans, Arial, sans-serif;
+  --fontQuote: Baskerville, serif;
+
+  --fontHeader: Ampersand, OpenSans, Arial, sans-serif;
+  --borderHeader: var(--primary);
+  --fontSizeHeader: 1.75em;
+  --bgFooter: var(--primary);
+  --fgFooter: var(--secondary);
+
+  --emphase: var(--alternate2);
+  --logo: none;
+
+  --popoverName: 'World';
+
+  // slide
+  --bgSlide: var(--bgBody);
+  --fgSlide: var(--fgBody);
+  --bgSlideHeader: var(--primary);
+  --fgSlideHeader: var(--secondary);
+  --fgSlideCounter: var(--alternate2);
+
+  // Link
+  --linkHoverShadow: .25rem .25rem .5rem rgba(255, 255, 255, .5);
+
+  // Code
+  --bgCode: #2b2b2b;
+  --fgCode: #bababa;
+  --fgEditable: var(--primary);
+
+  // Editable Zone
+  --bgBoardLight: #eee;
+  --bgBoardDark: #ccc;
+
+  // Navigation
+  --navigationWidth: 10vw;
+  --bgNavigation: rgba(0, 0, 0, .15);
+
+  --bgPanelHeader: var(--primary);
+  --fgPanelHeader: var(--secondary);
+  --bgPanelBody: rgba(0, 0, 0, .25);
+}
+
+@font-face {
+  font-family: Ampersand;
+  src: local('Zapfino'), local('Herculanum');
+  unicode-range: U+26;
+}
+
+@mixin textShadow {
+  text-shadow: 1px 1px .125rem rgba(0, 0, 0, .8);
+}
+
+@mixin innerSlideElement {
+  box-sizing: border-box;
+  max-width: calc(100vw - var(--navigationWidth) - var(--navigationWidth));
+  align-self: stretch;
+  margin: 0 var(--navigationWidth);
+}
+
+@mixin board {
+  background: linear-gradient(45deg, var(--bgBoardDark) 25%, transparent 25%, transparent 75%, var(--bgBoardDark) 75%, var(--bgBoardDark)) 0 0,
+  linear-gradient(45deg, var(--bgBoardDark) 25%, var(--bgBoardLight) 25%, var(--bgBoardLight) 75%, var(--bgBoardDark) 75%, var(--bgBoardDark)) 20px 20px var(--bgBoardLight);
+  background-size: 40px 40px;
+  z-index: -10;
+}

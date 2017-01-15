@@ -1,0 +1,36 @@
+#caniuse {
+
+  font-size: 5vh;
+  dl {
+    padding-left: 1em;
+    dt {
+    }
+
+    dd {
+      display: block;
+      font-size: 4vh;
+      margin-left: 1em;
+
+      em {
+        color: var(--alternate1);
+        font-style: normal;
+
+        &::after {
+          content: ' %';
+        }
+      }
+
+    }
+
+    dd + dd::before {
+      content: '';
+      margin: 0;
+    }
+
+    dd + dt::before {
+      content: '';
+      margin-top: .25em;
+    }
+  }
+
+}

@@ -1,0 +1,8 @@
+{
+  "server": {
+    "baseDir": "dist",
+    "directory": true
+  },
+  "notify": false,
+  "open": false
+}

@@ -1,0 +1,27 @@
+body > .slides-nav {
+  position: fixed;
+  width: 100vw;
+  z-index: 2;
+
+  nav {
+    padding: 0 1em;
+    display: flex;
+    justify-content: space-between;
+    color: transparent;
+
+    a, a:hover, a:focus, a:active {
+      color: transparent;
+      outline: none;
+      text-decoration: none;
+    }
+
+  }
+  &:hover {
+    a {
+      color: var(--alternate1);
+    }
+    a:hover, a:focus, a:active {
+      color: var(--alternate2);
+    }
+  }
+}

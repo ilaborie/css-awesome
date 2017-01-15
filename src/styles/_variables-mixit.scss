@@ -1,0 +1,36 @@
+.mixit {
+  --popoverName: 'MiXiT';
+  --extraTag: '#MiXiT';
+  --primary: #2c233d;
+  --secondary: #faf8f8;
+  --alternate1: #aecbd6;
+  --alternate2: #ff8d4e;
+
+  --fontBody: Lato, "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  --logo: inline('images/mxt-icon--logo.svg');
+
+  --emphase: var(--alternate2);
+
+  --bgBody: var(--secondary);
+  --fgBody: var(--primary);
+  --fontQuote: Baskerville, serif;
+
+  --fontHeader: Ampersand, OpenSans, Arial, sans-serif;
+  --borderHeader: var(--primary);
+  --fontSizeHeader: 1.75em;
+  --bgFooter: var(--primary);
+  --fgFooter: var(--secondary);
+
+
+  // slide
+  --bgSlide: var(--bgBody);
+  --fgSlide: var(--fgBody);
+  --bgSlideHeader: var(--primary);
+  --fgSlideHeader: var(--secondary);
+  --fgSlideCounter: var(--alternate2);
+
+  section::before {
+    background-origin: content-box;
+  }
+
+}

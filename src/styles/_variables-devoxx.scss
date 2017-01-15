@@ -1,0 +1,57 @@
+.devoxx {
+  --popoverName: 'DevoxxFR';
+  --extraTag: '#DevoxxFR';
+  --primary: #057FFA;
+  --secondary: #03002E;
+  --third: #033494;
+  --fourth: #F2D279;
+  --alternate1: #F7D279;
+  --alternate2: #EDAF1F;
+
+  --bgBody: var(--secondary);
+  --fgBody: #fff;
+  --fontBody: OpenSans, Arial, SansSerif;
+  --fontQuote: Baskerville, serif;
+  --bgFooter: var(--secondary);
+  --fgFooter: var(--fgSlide);
+
+  --fontHeader: Ampersand, Montserrat, Arial, SansSerif;
+  --borderHeader: var(--fourth);
+  --bgSlideHeader: var(--secondary);
+  --fgSlideHeader: #fff;
+  --fontSizeHeader: 1.75em;
+
+  --logo: inline('images/logo-texte-devoxx-france-800.png');
+
+  --emphase: var(--alternate2);
+
+  // slide
+  --bgSlide: inline('images/Background_hdtv_1920_1080_v3.png');
+  --fgSlide: var(--fgBody);
+  --fgSlideCounter: var(--alternate2);
+
+  // Link
+  --linkHoverShadow: .25rem .25rem .5rem rgba(255, 255, 255, .5);
+
+  // Code
+  --bgCode: #2b2b2b;
+  --fgCode: #bababa;
+  --fgEditable: var(--secondary);
+
+  // Editable Zone
+  --bgBoardLight: #eee;
+  --bgBoardDark: #ccc;
+
+  // Navigation
+  --navigationWidth: 10vw;
+  --bgNavigation: rgba(0, 0, 0, .75);
+
+  --bgPanelHeader: var(--secondary);
+  --fgPanelHeader: var(--alternate1);
+  --bgPanelBody: rgba(0, 0, 0, .5);
+
+  section::before {
+    padding: .25em 0 .5em .5em;
+    box-shadow: 0 0 0 .05em var(--secondary), 0 0 0 .1em currentColor
+  }
+}

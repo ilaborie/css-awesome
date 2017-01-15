@@ -1,0 +1,9 @@
+{
+  "verbose": true,
+  "delay": 2,
+  "watch": [
+    "src/",
+    "js/"
+  ],
+  "ext": "scss png js svg html md"
+}

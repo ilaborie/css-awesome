@@ -1,0 +1,53 @@
+#collapsible {
+  justify-content: flex-start;
+  .editable {
+    display: block;
+  }
+
+  .panel {
+    //@include innerSlideElement;
+    width: 100%;
+    position: relative;
+    border: medium solid currentcolor;
+    background: var(--bgPanelBody);
+    border-radius: .25em;
+
+    & > input[type=checkbox] {
+      transform: scale(2);
+    }
+
+    & > input[type=checkbox] + header label::before {
+      content: '▹';
+      display: inline-block;
+      min-width: 1em;
+    }
+    & > input[type=checkbox] ~ .body {
+      display: none;
+    }
+
+    & > input[type=checkbox]:checked + header label::before {
+      content: '▿';
+    }
+    & > input[type=checkbox]:checked ~ .body {
+      display: block;
+    }
+
+    & > header {
+      background: var(--bgPanelHeader);
+      color: var(--fgPanelHeader);
+      border-radius: .25em;
+      z-index: -1;
+      padding: .25em;
+      border-bottom: thin solid currentColor;
+      cursor: pointer;
+
+      label {
+        display: block;
+      }
+    }
+  }
+
+  .body blockquote {
+    font-size: 3vh;
+  }
+}

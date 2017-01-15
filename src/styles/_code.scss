@@ -1,0 +1,15 @@
+@import "node_modules/highlight.js/styles/darcula";
+
+pre {
+  @include innerSlideElement;
+  display: block;
+  //overflow-x: auto;
+  padding: 0.5em;
+  background: var(--bgCode);
+  box-sizing: border-box;
+  align-self: stretch;
+}
+
+pre, code {
+  font-family: 'Fira Code', Menlo, Monaco, monospace;
+}

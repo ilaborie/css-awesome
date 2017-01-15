@@ -1,0 +1,14 @@
+#least-power {
+  text-align: center;
+
+  a {
+    font-size: 1.25em;
+    font-family: var(--fontHeader);
+    @include textShadow;
+  }
+
+  blockquote {
+    line-height: 1.25;
+
+  }
+}

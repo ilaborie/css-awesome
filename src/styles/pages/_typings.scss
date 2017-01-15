@@ -1,0 +1,15 @@
+#typings {
+
+  .editable {
+    background: black;
+    color: green;
+    font-size: 1.5em;
+    padding: 1em;
+    justify-content: flex-start;
+
+    code {
+      white-space: nowrap;
+      text-shadow: 0.25rem 0.25rem 0.25em currentColor;
+    }
+  }
+}

@@ -1,0 +1,17 @@
+---
+skip: devoxx
+---
+<style scoped contenteditable="true">.editable code {
+  width: auto; /* 8 caractères */
+  border-right: .1em solid currentColor;
+  overflow: hidden;
+  animation: /* typing 8s steps(8, end), */
+             /*caret .5s step-end infinite alternate */;
+}
+
+@keyframes typing { from { width: 0; } }
+@keyframes caret { 50% { border-color: transparent; } }</style>
+
+<div class="editable">
+  <code>I &lt;3 CSS</code>
+</div>

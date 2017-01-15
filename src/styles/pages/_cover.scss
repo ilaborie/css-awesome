@@ -1,0 +1,18 @@
+$size: 64vh;
+$effectSize: .02em;
+
+#cover {
+
+  .css {
+    width: $size;
+    height: $size;
+    border: solid 1vh currentColor;
+    font-size: $size / 3.55;
+    padding: 2vh;
+    font-family: arial, sans-serif;
+    font-weight: bold;
+    box-sizing: border-box;
+    text-transform: uppercase;
+    line-height: 105%;
+  }
+}

@@ -1,0 +1,140 @@
+@import "variables";
+@import "variables-devoxx";
+@import "variables-mixit";
+@import "nav";
+@import "slide";
+@import "navigation";
+@import "code";
+@import "edit";
+@import "animations";
+
+body {
+  padding: 0;
+  margin: 0;
+  color: var(--fgBody);
+  font-family: var(--fontBody), cursive;
+  background: var(--bgBody);
+  counter-reset: section;
+}
+
+h1 a, h1 a:visited {
+  color: var(--fgBody);
+  opacity: .8;
+  text-decoration: none;
+
+  &:hover {
+    opacity: 1;
+  }
+}
+
+ul, ol {
+  margin: 0;
+  padding: 0;
+
+  li {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+dt, em {
+  color: var(--emphase);
+  @include textShadow;
+}
+
+blockquote {
+  text-align: justify;
+  font-family: var(--fontQuote);
+
+  p::before {
+    color: var(--emphase);
+    content: '‟';
+    font-weight: bold;
+    font-size: 2em;
+    margin-top: -1em;
+  }
+
+  strong {
+    color: var(--emphase);
+    font-style: normal;
+    @include textShadow;
+  }
+
+  footer cite {
+    font-weight: bold;
+    font-family: var(--fontBody);
+
+    &::before {
+      content: '— ';
+    }
+  }
+}
+
+button {
+  padding: .25rem .5rem;
+  border-radius: .25rem;
+  border-width: .25em;
+  color: var(--fgBody);
+}
+
+dt, dd {
+  display: inline;
+  margin: 0;
+}
+
+dd + dt::before {
+  content: '\A';
+  white-space: pre;
+}
+
+dd + dd::before {
+  content: ', ';
+  font-weight: normal;
+  margin-left: -.25em;
+}
+
+label {
+  cursor: pointer;
+}
+
+@import "pages/cover";
+@import "pages/whoami";
+@import "pages/dijkstra";
+@import "pages/least-power";
+@import "pages/uncovered";
+@import "pages/button-live";
+@import "pages/unit-commit-strip";
+@import "pages/popover";
+@import "pages/spinner";
+@import "pages/typings";
+@import "pages/state-list";
+@import "pages/checkbox";
+@import "pages/collapsible";
+@import "pages/tabs";
+@import "pages/dialog";
+@import "pages/caniuse";
+@import "pages/end";
+@import "pages/link";
+
+body.index {
+  display: flex;
+  flex-direction: column;
+
+  a {
+    counter-increment: a;
+    font-size: 2em;
+    margin: .125em;
+    padding: 0 .5em;
+
+    &::before {
+      content: counter(a) ' ';
+    }
+  }
+}
+
+#moto {
+  h2::before {
+    content: '👉 ';
+    font-size: 1.25em;
+  }
+}

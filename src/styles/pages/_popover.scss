@@ -1,0 +1,15 @@
+#popover {
+
+
+  .editable .popover {
+    margin-top: -1.5em;
+    padding: .125em .75em;
+    border-radius: .5em;
+    display: inline-block;
+    color: white;
+
+    &::after {
+      content: ' ' var(--popoverName) ' !';
+    }
+  }
+}

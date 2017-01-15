@@ -1,0 +1,107 @@
+$plateSize: 100px;
+
+#dining-philosophers {
+
+  .diner {
+    .table-wrapper {
+      transform: rotateX(20deg);
+      min-height: 10rem;
+      transform-origin: bottom;
+      z-index: 9999;
+      position: relative;
+      margin: 10px auto 0;
+      width: 20rem;
+    }
+
+    .table {
+      transform-style: preserve-3d;
+      outline: solid 1px transparent;
+      margin: 0 auto 0 auto;
+      min-height: 10rem;
+      padding: 15px 15px 22px 15px;
+      z-index: 999;
+      position: relative;
+      white-space: nowrap;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      plate {
+        z-index: 99999;
+      }
+    }
+
+    .table-surface {
+      box-shadow: 0 2rem .5rem rgba(0, 0, 0, .2);
+      background: #dd992d;
+      background: linear-gradient(#dd992d, #cd8c26);
+      position: absolute;
+      height: 100%;
+      bottom: 0;
+      width: 100%;
+    }
+
+    .table-edge {
+      width: 20rem;
+      margin: 0 auto .5rem auto;
+      background: #ac741c;
+      height: 1rem;
+      transform: rotateX(-40deg);
+      transform-origin: top;
+      z-index: 2;
+    }
+
+    .table-leg {
+      width: 1.5rem,;
+      height: .8rem;
+      background: #84570f;
+      position: absolute;
+      top: 1rem;
+
+      &:first-child {
+        left: 1.5rem;
+      }
+      &:last-child {
+        right: 1.5rem;
+      }
+    }
+
+    .plate {
+      box-shadow: 0 8px 0 rgba(0, 0, 0, .1);
+      display: inline-block;
+      width: $plateSize;
+      height: $plateSize;
+      margin: 0 10px;
+      position: relative;
+      border-bottom: solid 5px #DDD;
+      background: white;
+      border-radius: 50%;
+
+      &:before {
+        content: "";
+        display: block;
+        position: absolute;
+        left: calc(50% - 32px);
+        top: calc(50% - 32px);
+        height: 65px;
+        width: 65px;
+        border-radius: 60px;
+        border-top: solid 6px #CCC;
+        opacity: .4;
+        background: rgba(255, 255, 255, 1);
+      }
+      &:after {
+        content: "";
+        display: block;
+        position: absolute;
+        left: calc(50% - 41px);
+        top: calc(50% - 40px);
+        height: 67px;
+        width: 67px;
+        border-radius: 60px;
+        border: solid 8px #009ff2;
+        opacity: .4;
+      }
+    }
+  }
+}

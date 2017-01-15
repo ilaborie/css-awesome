@@ -1,0 +1,22 @@
+#whoami {
+  p strong {
+    font-size: 1.25em;
+  }
+  p:nth-child(3) a {
+    border-bottom: none;
+    vertical-align: sub;
+    &:before {
+      content: '';
+    }
+  }
+  p:nth-child(4) a:before {
+    content: '🐦 ';
+  }
+  p:nth-child(5) a:before {
+    content: '✉️ ';
+  }
+
+  svg path {
+    fill: var(--fgBody);
+  }
+}
