@@ -562,16 +562,10 @@ label {
   flex-direction: column;
   justify-content: space-around; }
 
-#checkbox .editable, #checkbox .editable blockquote::before {
-  background: url("https://images.unsplash.com/photo-1458245375131-cf4fd90e78ac?dpr=1&auto=format&fit=crop&w=1500&h=994&q=80&cs=tinysrgb&crop="); }
-
-#checkbox style {
-  margin-bottom: 1rem; }
-
 #checkbox .editable {
   margin-top: 1rem;
   flex-direction: column;
-  color: #fff;
+  color: var(--secondary);
   justify-content: flex-start;
   max-height: 50vh; }
   #checkbox .editable blockquote {
@@ -592,7 +586,8 @@ label {
       z-index: -1;
       filter: blur(20px); }
   #checkbox .editable fieldset {
-    border: medium solid #fff;
+    border: medium solid currentColor;
+    background: rgba(255, 255, 255, 0.5);
     padding: .25em;
     min-width: 4ch;
     border-radius: .25rem; }
@@ -607,11 +602,10 @@ label {
 
 #collapsible {
   justify-content: flex-start; }
+  #collapsible .editable {
+    display: block; }
   #collapsible .panel {
-    box-sizing: border-box;
-    max-width: calc(100vw - var(--navigationWidth) - var(--navigationWidth));
-    align-self: stretch;
-    margin: 0 var(--navigationWidth);
+    width: 100%;
     position: relative;
     border: medium solid currentcolor;
     background: rgba(0, 0, 0, 0.5);

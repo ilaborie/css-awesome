@@ -394,9 +394,9 @@ div.left { border-left-color: transparent; }
 </div>
 
 <style scoped contenteditable="true">.editable input[type=checkbox] + label::before {
-  content: 'like';
+  content: '';
 }
-.editable input[type=checkbox]:checked + label::before {
+.editable input[type=checkbox] + label::before {
   content: '';
 }
 .editable input[type=checkbox] { opacity: 1; }
@@ -410,32 +410,32 @@ div.left { border-left-color: transparent; }
 <!-- Slide -->
 <section id="collapsible" class="">
   <style scoped contenteditable="true">.panel input[type=checkbox] {
-	// hide me
+  // hide me
 }</style>
 
 
+<div class="editable">
+	<div class="panel">
+		<input type="checkbox" id="panel" checked>
+		<header><label for="panel">Apollo 11</label></header>
+		<div class="body">
+			<blockquote>
+				The computer (or rather the software in it) was smart enough to recognize that it was being asked to perform
+				more tasks than it should be performing. It then sent out an alarm, which meant to the astronaut, I'm overloaded
+				with more tasks than I should be doing at this time and I'm going to keep only the more important tasks; i.e.,
+				the ones needed for landing ... Actually, the computer was programmed to do more than recognize error
+				conditions. A complete set of recovery programs was incorporated into the software. The software's action, in
+				this case, was to eliminate lower priority tasks and re-establish the more important ones ... If the computer
+				hadn't recognized this problem and taken recovery action, I doubt if Apollo 11 would have been the successful
+				moon landing it was.[26]
+				<footer><cite>Letter from Margaret H. Hamilton, Director of Apollo Flight Computer Programming MIT Draper
+					Laboratory, Cambridge, Massachusetts[27], titled "Computer Got Loaded", published in Datamation, March 1,
+					1971</cite></footer>
+			</blockquote>
 
-<div class="panel">
-	<input type="checkbox" id="panel" checked>
-	<header><label for="panel">Apollo 11</label></header>
-	<div class="body">
-		<blockquote>
-			The computer (or rather the software in it) was smart enough to recognize that it was being asked to perform
-			more tasks than it should be performing. It then sent out an alarm, which meant to the astronaut, I'm overloaded
-			with more tasks than I should be doing at this time and I'm going to keep only the more important tasks; i.e.,
-			the ones needed for landing ... Actually, the computer was programmed to do more than recognize error
-			conditions. A complete set of recovery programs was incorporated into the software. The software's action, in
-			this case, was to eliminate lower priority tasks and re-establish the more important ones ... If the computer
-			hadn't recognized this problem and taken recovery action, I doubt if Apollo 11 would have been the successful
-			moon landing it was.[26]
-			<footer><cite>Letter from Margaret H. Hamilton, Director of Apollo Flight Computer Programming MIT Draper
-				Laboratory, Cambridge, Massachusetts[27], titled "Computer Got Loaded", published in Datamation, March 1,
-				1971</cite></footer>
-		</blockquote>
-
+		</div>
 	</div>
 </div>
-
   <a href="#checkbox" class="previous"></a>
   <a href="#tabs1" class="next"></a>
 </section>
@@ -541,14 +541,14 @@ div.left { border-left-color: transparent; }
 
 <!-- Slide -->
 <section id="link" class="center">
-  <h2 id="-todo-lien_vers_les_slides-"><a href="todo://lien_vers_les_slides">todo://lien_vers_les_slides</a></h2>
+  <h2 id="-http-bit-ly-cssawesome-"><a href="http://bit.ly/CssAwesome">http://bit.ly/CssAwesome</a></h2>
 
   <a href="#moto" class="previous"></a>
-  <a href="#extra-link" class="next"></a>
+  <a href="#learn" class="next"></a>
 </section>
 
 <!-- Slide -->
-<section id="extra-link" class="">
+<section id="learn" class="">
   <h3 id="pour-apprendre">Pour apprendre</h3>
 <ul>
 <li><code>(Ctrl|Cmd) + Shift + i</code></li>
@@ -576,7 +576,7 @@ div.left { border-left-color: transparent; }
     overflow: hidden;
 }
 </style>
-  <a href="#extra-link" class="previous"></a>
+  <a href="#learn" class="previous"></a>
   
 </section>
 </main>
