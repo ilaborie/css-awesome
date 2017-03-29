@@ -1,4 +1,37 @@
 @charset "UTF-8";
+:root {
+  --extraTag: '';
+  --primary: #230339;
+  --secondary: #FFFAED;
+  --alternate1: #554500;
+  --alternate2: #222;
+  --bgBody: var(--secondary);
+  --fgBody: var(--primary);
+  --fontBody: OpenSans, Arial, sans-serif;
+  --fontQuote: Baskerville, serif;
+  --fontHeader: Ampersand, OpenSans, Arial, sans-serif;
+  --borderHeader: var(--primary);
+  --fontSizeHeader: 1.75em;
+  --bgFooter: var(--primary);
+  --fgFooter: var(--secondary);
+  --emphase: var(--alternate2);
+  --logo: none;
+  --bgSlide: var(--bgBody);
+  --fgSlide: var(--fgBody);
+  --bgSlideHeader: rgba(0, 0, 0, 0.125);
+  --fgSlideCounter: var(--primary);
+  --linkHoverShadow: 0.25rem 0.25rem 0.5rem rgba(255, 255, 255, 0.5);
+  --bgCode: #2b2b2b;
+  --fgCode: #bababa;
+  --fgEditable: var(--primary);
+  --bgBoardLight: #eee;
+  --bgBoardDark: #ccc;
+  --navigationWidth: 10vw;
+  --bgNavigation: rgba(255, 255, 255, 0.75);
+  --bgPanelHeader: var(--primary);
+  --fgPanelHeader: var(--secondary);
+  --bgPanelBody: rgba(0, 0, 0, 0.25); }
+
 .devoxx {
   --extraTag: '#DevoxxFR';
   --primary: #057FFA;
@@ -11,21 +44,28 @@
   --fgBody: #fff;
   --fontBody: OpenSans, Arial, SansSerif;
   --fontQuote: Baskerville, serif;
+  --bgFooter: var(--secondary);
+  --fgFooter: var(--fgSlide);
   --fontHeader: Ampersand, Montserrat, Arial, SansSerif;
   --borderHeader: var(--fourth);
   --fontSizeHeader: 1.75em;
-  --emphase: var(--fourth);
+  --emphase: var(--alternate2);
   --logo: url("assets/images/logos/logo-texte-devoxx-france-800.png");
   --bgSlide: url("assets/images/Background_hdtv_1920_1080_v3.png");
   --fgSlide: var(--fgBody);
   --bgSlideHeader: rgba(0, 0, 0, 0.25);
+  --fgSlideCounter: var(--alternate1);
   --linkHoverShadow: 0.25rem 0.25rem 0.5rem rgba(255, 255, 255, 0.5);
   --bgCode: #2b2b2b;
   --fgCode: #bababa;
+  --fgEditable: var(--secondary);
   --bgBoardLight: #eee;
   --bgBoardDark: #ccc;
   --navigationWidth: 10vw;
-  --bgNavigation: rgba(0, 0, 0, 0.75); }
+  --bgNavigation: rgba(0, 0, 0, 0.75);
+  --bgPanelHeader: var(--secondary);
+  --fgPanelHeader: var(--alternate1);
+  --bgPanelBody: rgba(0, 0, 0, 0.5); }
 
 @font-face {
   font-family: Ampersand;
@@ -70,7 +110,8 @@ main > section {
   flex-direction: column; }
   main > section::before {
     padding: .25rem 0 .5rem;
-    background: var(--secondary) var(--logo) no-repeat right;
+    background: var(--bgFooter) var(--logo) no-repeat right;
+    color: var(--fgFooter);
     background-size: contain;
     text-align: left;
     font-size: 50%;
@@ -92,7 +133,7 @@ main > section {
     border-radius: 50%;
     font-size: 50%;
     font-family: Zapfino, fantasy;
-    color: var(--alternate1);
+    color: var(--fgSlideCounter);
     text-shadow: 0.25rem 0.25rem 0.25em rgba(0, 0, 0, 0.8);
     top: 1vh;
     left: 95vw; }
@@ -565,7 +606,7 @@ label {
 #checkbox .editable {
   margin-top: 1rem;
   flex-direction: column;
-  color: var(--secondary);
+  color: var(--fgEditable);
   justify-content: flex-start;
   max-height: 50vh; }
   #checkbox .editable blockquote {
@@ -608,7 +649,7 @@ label {
     width: 100%;
     position: relative;
     border: medium solid currentcolor;
-    background: rgba(0, 0, 0, 0.5);
+    background: var(--bgPanelBody);
     border-radius: .25em; }
     #collapsible .panel > input[type=checkbox] {
       transform: scale(2); }
@@ -623,11 +664,11 @@ label {
     #collapsible .panel > input[type=checkbox]:checked ~ .body {
       display: block; }
     #collapsible .panel > header {
-      background: var(--secondary);
+      background: var(--bgPanelHeader);
+      color: var(--fgPanelHeader);
       border-radius: .25em;
       z-index: -1;
       padding: .25em;
-      color: var(--alternate1);
       border-bottom: thin solid currentColor;
       cursor: pointer; }
       #collapsible .panel > header label {
