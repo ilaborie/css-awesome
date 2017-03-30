@@ -324,7 +324,7 @@ style[contenteditable=true], pre {
 
 style[contenteditable=true] {
   border: .125em solid transparent;
-  background: linear-gradient(var(--bgCode), var(--bgCode)) padding-box, repeating-linear-gradient(-45deg, white 0, white 25%, transparent 0, transparent 50%) 0/0.6em 0.6em;
+  background: linear-gradient(var(--bgCode), var(--bgCode)) padding-box, repeating-linear-gradient(-45deg, var(--fgBody) 0, var(--fgBody) 25%, transparent 0, transparent 50%) 0/0.6em 0.6em;
   animation: ants 60s linear infinite; }
 
 .editable {
@@ -449,7 +449,8 @@ label {
   font-weight: bold;
   box-sizing: border-box;
   text-transform: uppercase;
-  line-height: 105%; }
+  line-height: 105%;
+  text-shadow: 0.02em 0.02em var(--bgBody), 0.04em 0.04em currentColor; }
 
 #whoami p strong {
   font-size: 1.25em; }
@@ -766,9 +767,9 @@ body.index {
   display: flex;
   flex-direction: column; }
   body.index a {
+    counter-increment: a;
     font-size: 2em;
     margin: .125em;
     padding: 0 .5em; }
     body.index a:before {
-      counter-increment: a;
       content: counter(a) " "; }
