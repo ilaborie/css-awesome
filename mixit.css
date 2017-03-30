@@ -27,7 +27,7 @@
   --bgBoardLight: #eee;
   --bgBoardDark: #ccc;
   --navigationWidth: 10vw;
-  --bgNavigation: rgba(255, 255, 255, 0.75);
+  --bgNavigation: rgba(0, 0, 0, 0.15);
   --bgPanelHeader: var(--primary);
   --fgPanelHeader: var(--secondary);
   --bgPanelBody: rgba(0, 0, 0, 0.25); }
@@ -134,7 +134,7 @@ main > section {
     font-size: 50%;
     font-family: Zapfino, fantasy;
     color: var(--fgSlideCounter);
-    text-shadow: 0.125rem 0.125rem 0.125em rgba(0, 0, 0, 0.8);
+    text-shadow: 1px 1px 0.125rem rgba(0, 0, 0, 0.8);
     top: 1vh;
     left: 95vw; }
   main > section.center {
@@ -148,6 +148,8 @@ main > section {
       text-align: center;
       font-family: var(--fontHeader);
       margin-top: -.75em; }
+      main > section.center > h2 small {
+        font-size: 60%; }
   main > section.around {
     justify-content: space-around;
     align-items: center; }
@@ -402,14 +404,14 @@ ul, ol {
 
 dt, em {
   color: var(--emphase);
-  text-shadow: 0.125rem 0.125rem 0.125em rgba(0, 0, 0, 0.8); }
+  text-shadow: 1px 1px 0.125rem rgba(0, 0, 0, 0.8); }
 
 blockquote {
   text-align: justify;
   font-family: var(--fontQuote); }
   blockquote strong {
     color: var(--emphase);
-    text-shadow: 0.125rem 0.125rem 0.125em rgba(0, 0, 0, 0.8);
+    text-shadow: 1px 1px 0.125rem rgba(0, 0, 0, 0.8);
     font-style: normal; }
   blockquote footer cite {
     font-weight: bold;
@@ -556,7 +558,7 @@ label {
   #least-power a {
     font-size: 1.25em;
     font-family: var(--fontHeader);
-    text-shadow: 0.125rem 0.125rem 0.125em rgba(0, 0, 0, 0.8); }
+    text-shadow: 1px 1px 0.125rem rgba(0, 0, 0, 0.8); }
   #least-power blockquote {
     line-height: 1.25; }
 
@@ -572,15 +574,15 @@ label {
   #unit-commit-strip p img {
     height: 80vh; }
 
-#bubble2 .editable .bubble {
+#popover .editable .popover {
   margin-top: -1.5em;
   padding: .125em .75em;
   border-radius: .5em;
   display: inline-block; }
 
-#spinner .editable {
+#loader .editable {
   font-size: 80%; }
-  #spinner .editable .spinner {
+  #loader .editable .loader {
     transform: scale(4);
     color: purple;
     display: inline-block;
@@ -616,7 +618,7 @@ label {
     padding: .25em; }
     #checkbox .editable blockquote p {
       font-style: italic;
-      text-shadow: 0.125rem 0.125rem 0.125em rgba(0, 0, 0, 0.8);
+      text-shadow: 1px 1px 0.125rem rgba(0, 0, 0, 0.8);
       margin: 0; }
     #checkbox .editable blockquote::before {
       content: '';
