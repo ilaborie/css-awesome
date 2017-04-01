@@ -1,6 +1,7 @@
 @charset "UTF-8";
 :root {
   --extraTag: '';
+  --endTag: '';
   --primary: #512470;
   --secondary: #fff;
   --alternate1: #e67f3a;
@@ -120,7 +121,7 @@ main > section {
     left: 0;
     width: 100vw;
     white-space: pre;
-    content: var(--extraTag) " #CSS #Awesome";
+    content: var(--extraTag) " #CSS #Awesome " var(--endTag);
     z-index: 2; }
   main > section::after {
     counter-increment: section;
@@ -457,8 +458,11 @@ label {
 #whoami p strong {
   font-size: 1.25em; }
 
-#whoami p img {
-  vertical-align: bottom; }
+#whoami p:nth-child(3) a {
+  border-bottom: none;
+  vertical-align: sub; }
+  #whoami p:nth-child(3) a:before {
+    content: ''; }
 
 #whoami p:nth-child(4) a:before {
   content: '🐦 '; }
@@ -750,17 +754,54 @@ label {
   border: medium solid rgba(0, 0, 0, 0.3);
   border-radius: .5em; }
 
-#end .css {
-  width: 32vh;
-  height: 32vh;
-  border: solid 1vh currentColor;
-  font-size: 8.5vh;
-  padding: 2vh;
-  font-family: arial, sans-serif;
-  font-weight: bold;
-  box-sizing: border-box;
-  text-transform: uppercase;
-  line-height: 105%; }
+#caniuse {
+  font-size: 5vh; }
+  #caniuse dl {
+    padding-left: 1em; }
+    #caniuse dl dd {
+      display: block;
+      font-size: 4vh;
+      margin-left: 1em; }
+      #caniuse dl dd em {
+        color: var(--alternate1);
+        font-style: normal; }
+        #caniuse dl dd em::after {
+          content: ' %'; }
+    #caniuse dl dd + dd::before {
+      content: '';
+      margin: 0; }
+    #caniuse dl dd + dt::before {
+      content: '';
+      margin-top: .25em; }
+
+#end {
+  animation: 10s rainbow infinite;
+  --endTag: '#🦄'; }
+  #end .css {
+    width: 32vh;
+    height: 32vh;
+    border: solid 1vh currentColor;
+    font-size: 8.5vh;
+    padding: 2vh;
+    font-family: arial, sans-serif;
+    font-weight: bold;
+    box-sizing: border-box;
+    text-transform: uppercase;
+    line-height: 105%; }
+
+@keyframes rainbow {
+  from, to {
+    background: red; }
+  16% {
+    background: yellow; }
+  33% {
+    background: green; }
+  50% {
+    background: aqua; }
+  66% {
+    background: blue; }
+  83% {
+    background: fuchsia; } }
 
 #link {
   align-items: center; }
