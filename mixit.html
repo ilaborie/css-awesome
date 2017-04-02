@@ -464,6 +464,18 @@ div.left { border-left-color: transparent; }
 	<div class="left"></div>
 </div>
   <a href="#dining-philosophers" class="previous"></a>
+  <a href="#popover-demo" class="next"></a>
+</section>
+
+<!-- Slide -->
+<section id="popover-demo" class="center">
+  <input type="text" required>
+<div class="hint">Required !!</div>
+
+<a href="#popover-demo">hover me</a>
+<div class="popover">Hello </div>
+
+  <a href="#border" class="previous"></a>
   <a href="#popover" class="next"></a>
 </section>
 
@@ -471,7 +483,7 @@ div.left { border-left-color: transparent; }
 <section id="popover" class="center">
   <style scoped contenteditable="true">.popover {
   position: relative;
-  background: navy;
+  background: teal;
 }
 /*.popover::before {
   position: absolute;
@@ -484,10 +496,10 @@ div.left { border-left-color: transparent; }
 </style>
 
 <div class="editable">
-	<div class="popover">Hello DevoxxFR !</div>
+	<div class="popover">Hello </div>
 </div>
 
-  <a href="#border" class="previous"></a>
+  <a href="#popover-demo" class="previous"></a>
   <a href="#pseudo-element-takeaway" class="next"></a>
 </section>
 
@@ -561,7 +573,7 @@ div.left { border-left-color: transparent; }
 </section>
 
 <!-- Slide -->
-<section id="anim-end" class="center">
+<section id="anim-end" class="around-list">
   <ul>
 <li><a href="https://developer.mozilla.org/fr/docs/Web/CSS/Animations_CSS/Utiliser_les_animations_CSS">Utiliser les animations CSS</a></li>
 <li><a href="http://tawian.io/text-spinners/">Text Spinner</a></li>
@@ -624,6 +636,24 @@ fieldset input[type=checkbox] { opacity: 1; }
 
 
   <a href="#state-list" class="previous"></a>
+  <a href="#switch" class="next"></a>
+</section>
+
+<!-- Slide -->
+<section id="switch" class="">
+  <style scoped contenteditable="true">input[type=checkbox].switch + label::before {
+  content: '';
+}
+input[type=checkbox].switch:checked + label::before {
+  content: '';
+}
+</style>
+
+<div class="editable">
+  <label>Switch OFF <input type="checkbox" class="switch"></label>
+  <label>Switch ON  <input type="checkbox" class="switch" checked></label>
+</div>
+  <a href="#checkbox" class="previous"></a>
   <a href="#collapsible" class="next"></a>
 </section>
 
@@ -656,7 +686,7 @@ fieldset input[type=checkbox] { opacity: 1; }
 		</div>
 	</div>
 </div>
-  <a href="#checkbox" class="previous"></a>
+  <a href="#switch" class="previous"></a>
   <a href="#tabs1" class="next"></a>
 </section>
 
@@ -719,7 +749,6 @@ fieldset input[type=checkbox] { opacity: 1; }
   <dialog id="diag">This is a dialog!</dialog>
 </div>
 
-
   <a href="#tabs" class="previous"></a>
   <a href="#states" class="next"></a>
 </section>
@@ -761,6 +790,7 @@ fieldset input[type=checkbox] { opacity: 1; }
 	<dt>IE 9+, Firefox, Chrome</dt>
 	<dd><code>currentColor</code> <em>98</em></dd>
 	<dd><code>background-origin</code> <em>98</em></dd>
+	<dd><code>box-shadow</code> <em>98</em></dd>
 	<dd><code>calc</code> <em>97</em></dd>
 
 	<dt>IE 10+, Firefox, Chrome</dt>
@@ -781,7 +811,7 @@ fieldset input[type=checkbox] { opacity: 1; }
 </section>
 
 <!-- Slide -->
-<section id="outro" class="center">
+<section id="outro" class="around-list">
   <ul>
 <li>Utilisez du CSS pour simpifier le code</li>
 <li>Utilisez les pre/post processeurs</li>
