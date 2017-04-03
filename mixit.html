@@ -259,7 +259,7 @@
 <section id="least-power" class="center">
   <p><a href="https://www.w3.org/2001/tag/doc/leastPower.html">The Rule of Least Power</a></p>
 <blockquote>
-<p>When designing computer systems, one is often faced with a choice between using a more or less powerful language for publishing information, for expressing constraints, or for solving some problem. This finding explores tradeoffs relating the choice of language to reusability of information. The &quot;Rule of Least Power&quot; suggests <em>choosing the least powerful language suitable</em> for a given purpose.</p>
+<p>When designing computer systems, one is often faced with a choice between using a more or less powerful language for publishing information, for expressing constraints, or for solving some problem. This finding explores tradeoffs relating the choice of language to reusability of information. The &quot;Rule of Least Power&quot; suggests <strong>choosing the least powerful language suitable</strong> for a given purpose.</p>
 </blockquote>
 
   <a href="#whoami" class="previous"></a>
@@ -275,7 +275,7 @@
 <li>SVG</li>
 <li>JavaScript</li>
 </ol>
-<p>⚠️ <em>Il y a toujours de bonnes raisons pour ne pas suivre ces règles</em></p>
+<p>⚠️ <em>... mais il y a toujours de bonnes raisons pour ne pas suivre ces règles</em></p>
 
   <a href="#least-power" class="previous"></a>
   <a href="#uncovered" class="next"></a>
@@ -309,7 +309,7 @@
   <h3 id="roadmap">Roadmap</h3>
 <ul>
 <li>Utiliser un pré-processeur ?</li>
-<li>Unités ...</li>
+<li>Unités, <code>calc()</code></li>
 <li>Pseudo éléments</li>
 <li>Animations</li>
 <li>Pseudo classes d&#39;états</li>
@@ -321,7 +321,7 @@
 </section>
 
 <!-- Slide -->
-<section id="preprocessors" class="center">
+<section id="preprocessors" class="center start-part">
   <h2 id="utiliser-un-pr-processeur-">Utiliser un pré-processeur ?</h2>
 
   <a href="#roadmap" class="previous"></a>
@@ -350,9 +350,9 @@ button.danger {/*
 </section>
 
 <!-- Slide -->
-<section id="be-smart" class="">
+<section id="be-smart" class="end-part">
   <h3 id="pr-processeurs-">Pré-processeurs ?</h3>
-<p>Oui mais privilégiez:</p>
+<p>Oui, mais privilégiez:</p>
 <ul>
 <li>le CSS</li>
 <li>les post-processeurs</li>
@@ -369,7 +369,7 @@ button.danger {/*
 </section>
 
 <!-- Slide -->
-<section id="units" class="center">
+<section id="units" class="center start-part">
   <h2 id="unit-s-calc-et-flexbox-">Unités, <code>calc()</code>, et <code>flexbox</code></h2>
 
   <a href="#be-smart" class="previous"></a>
@@ -394,7 +394,7 @@ button.danger {/*
 	<dd>longueurs absolues (mesure physique)</dd>
 
 	<dt>em, rem</dt>
-	<dd><code>font-size</code> calculée (ou celle du parent si la <code>font-size</code> est définit), ou celle de la racine</dd>
+	<dd>fonction de la <code>font-size</code>, ou celle de la racine</dd>
 
 	<dt>ex, ch</dt>
 	<dd>hauteur d'un <code>x</code>, largeur d'un <code>0</code></dd>
@@ -430,7 +430,7 @@ button.danger {/*
 </section>
 
 <!-- Slide -->
-<section id="units-flexbox" class="around">
+<section id="units-flexbox" class="around end-part">
   <h4 id="unit-s-et-calc-">Unités et <code>calc()</code></h4>
 <ul>
 <li><a href="https://developer.mozilla.org/fr/docs/Web/CSS/length">Unités</a> et <a href="https://www.w3.org/Style/Examples/007/units.fr.html">Truc et astuces</a></li>
@@ -449,7 +449,7 @@ button.danger {/*
 </section>
 
 <!-- Slide -->
-<section id="pseudo-elements" class="center">
+<section id="pseudo-elements" class="center start-part">
   <h2 id="pseudo-l-ments">Pseudo éléments</h2>
 
   <a href="#units-flexbox" class="previous"></a>
@@ -544,7 +544,7 @@ div.left { border-left-color: transparent; }
 </section>
 
 <!-- Slide -->
-<section id="pseudo-element-takeaway" class="around">
+<section id="pseudo-element-takeaway" class="around end-part">
   <ul>
 <li><a href="https://www.w3.org/TR/CSS22/generate.html#before-after-content">The :before and :after pseudo-elements</a></li>
 <li>mais aussi <code>::first-letter</code>, <code>::first-line</code>, <code>::selection</code>, <code>::backdrop</code></li>
@@ -561,7 +561,7 @@ div.left { border-left-color: transparent; }
 </section>
 
 <!-- Slide -->
-<section id="animation" class="center">
+<section id="animation" class="center start-part">
   <h2 id="animations">Animations</h2>
 
   <a href="#pseudo-element-takeaway" class="previous"></a>
@@ -613,12 +613,13 @@ div.left { border-left-color: transparent; }
 </section>
 
 <!-- Slide -->
-<section id="anim-end" class="around-list">
+<section id="anim-end" class="around-list  end-part">
   <ul>
 <li><a href="https://developer.mozilla.org/fr/docs/Web/CSS/Animations_CSS/Utiliser_les_animations_CSS">Utiliser les animations CSS</a></li>
 <li><a href="http://tawian.io/text-spinners/">Text Spinner</a></li>
 <li><a href="https://www.pexels.com/blog/css-only-loaders/">CSS only loader</a></li>
-<li><a href="https://daneden.github.io/animate.css/">animate.css</a></li>
+<li><a href="https://daneden.github.io/animate.css/">Animate.css</a></li>
+<li><a href="https://developer.mozilla.org/fr/docs/Web/HTML/Element/Progress"><code>&lt;progress&gt;</code> en HTML</a></li>
 </ul>
 
   <a href="#typings" class="previous"></a>
@@ -626,7 +627,7 @@ div.left { border-left-color: transparent; }
 </section>
 
 <!-- Slide -->
-<section id="state" class="center">
+<section id="state" class="center start-part">
   <h2 id="pseudo-classes-d-tats">Pseudo classes d&#39;états</h2>
 
   <a href="#anim-end" class="previous"></a>
@@ -640,7 +641,7 @@ div.left { border-left-color: transparent; }
 	<dt><code>:target</code>, <code>:active</code>, <code>:focus</code>, <code>:empty</code>, ...</dt>
 	<dd>Pour tous</dd>
 
-	<dt><code>:vistied</code>, <code>:link</code>, ...</dt>
+	<dt><code>:visited</code>, <code>:link</code>, ...</dt>
 	<dd>Pour les liens</dd>
 
 	<dt><code>:checked</code>, <code>:valid</code>, <code>:invalid</code>, ...</dt>
@@ -700,7 +701,7 @@ input[type=checkbox].switch:checked + label::before {
 <!-- Slide -->
 <section id="collapsible" class="">
   <style scoped contenteditable="true">.panel input[type=checkbox] {
-  // hide me
+ // hide me
 }</style>
 
 
@@ -710,14 +711,16 @@ input[type=checkbox].switch:checked + label::before {
 		<header><label for="panel">Apollo 11</label></header>
 		<div class="body">
 			<blockquote>
-				The computer (or rather the software in it) was smart enough to recognize that it was being asked to perform
-				more tasks than it should be performing. It then sent out an alarm, which meant to the astronaut, I'm overloaded
-				with more tasks than I should be doing at this time and I'm going to keep only the more important tasks; i.e.,
-				the ones needed for landing ... Actually, the computer was programmed to do more than recognize error
-				conditions. A complete set of recovery programs was incorporated into the software. The software's action, in
-				this case, was to eliminate lower priority tasks and re-establish the more important ones ... If the computer
-				hadn't recognized this problem and taken recovery action, I doubt if Apollo 11 would have been the successful
-				moon landing it was.[26]
+				<p>The computer (or rather the software in it) was smart enough to recognize that it was being asked to perform
+					more tasks than it should be performing. It then sent out an alarm, which meant to the astronaut, I'm
+					overloaded
+					with more tasks than I should be doing at this time and I'm going to keep only the more important tasks; i.e.,
+					the ones needed for landing ... Actually, the computer was programmed to do more than recognize error
+					conditions. A complete set of recovery programs was incorporated into the software. The software's action, in
+					this case, was to eliminate lower priority tasks and re-establish the more important ones ... If the computer
+					hadn't recognized this problem and taken recovery action, I doubt if Apollo 11 would have been the successful
+					moon landing it was.[26]
+				</p>
 				<footer><cite>Letter from Margaret H. Hamilton, Director of Apollo Flight Computer Programming MIT Draper
 					Laboratory, Cambridge, Massachusetts[27], titled "Computer Got Loaded", published in Datamation, March 1,
 					1971</cite></footer>
@@ -794,8 +797,8 @@ input[type=checkbox].switch:checked + label::before {
 </section>
 
 <!-- Slide -->
-<section id="states" class="around">
-  <h4 id="collaspsible-panel-en-pur-html-polyfill-https-github-com-chemerisuk-better-details-polyfill-">Collaspsible panel en pur HTML <a href="https://github.com/chemerisuk/better-details-polyfill/">Polyfill</a></h4>
+<section id="states" class="around end-part">
+  <h4 id="collapsible-panel-en-pur-html-polyfill-https-github-com-chemerisuk-better-details-polyfill-">Collapsible panel en pur HTML <a href="https://github.com/chemerisuk/better-details-polyfill/">Polyfill</a></h4>
 <pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">details</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-name">summary</span>&gt;</span>Des détails<span class="hljs-tag">&lt;/<span class="hljs-name">summary</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Plus d'infos à propos des détails.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
@@ -815,7 +818,7 @@ input[type=checkbox].switch:checked + label::before {
 </section>
 
 <!-- Slide -->
-<section id="caniuse" class="center">
+<section id="caniuse" class="center start-part end-part">
   <h2><a href="http://caniuse.com/">Can I use</a></h2>
 
 <p><a href="http://css3test.com/">The CSS3 / CSS4 Test</a></p>
@@ -866,7 +869,7 @@ input[type=checkbox].switch:checked + label::before {
 
 <!-- Slide -->
 <section id="moto" class="center">
-  <h2 id="-traitez-le-css-comme-du-code">☞ Traitez le CSS comme du code</h2>
+  <h2 id="traitez-le-css-comme-du-code">Traitez le CSS comme du code</h2>
 <ul>
 <li>Revue de code</li>
 <li>DRY</li>
