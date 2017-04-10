@@ -1,11 +1,12 @@
 import {join} from 'path';
+import {error} from 'util';
+
 import {css} from './css';
 import {html} from './html';
 import {htmlIndex} from './index-html';
 import {Slide, slides} from './slides';
 import {slide} from './slide';
 import {copyDir, log, sep, writeFile} from './utils';
-import {error} from 'util';
 
 
 const copyAsset = (assetsDir, output) => Promise.resolve(log('- Copying assets ...'))
@@ -13,9 +14,9 @@ const copyAsset = (assetsDir, output) => Promise.resolve(log('- Copying assets .
     .then(() => log(`✅ copying ${assetsDir}`))
     .catch(err => error(`️FAIL copying assets: ${err}`));
 
-const buildCss = (cssDir, output, minify) =>
+const buildCss = (cssDir, key, output, minify) =>
     Promise.resolve(log('- Building CSS ...', minify ? '(minified)' : ''))
-        .then(() => css(cssDir, minify))
+        .then(() => css(cssDir, key, minify))
         .then(data => writeFile(output, data))
         .then(() => log(`✅ write CSS ${output}`))
         .catch(err => error(`️FAIL building CSS : ${err}`));
@@ -40,21 +41,21 @@ const buildHtml = (slidesDir, title, key, output, outputIndex) =>
         .then(() => log(`✅ Write HTML ${output}`))
         .catch(err => error(`️FAIL building HTML: ${err}`));
 
-const buildMain = ({src, key, title, out}) => {
+const buildMain = ({src, minify, key, title, out}) => {
     const slidesDir = join(src, 'slides');
+    const cssDir = join(src, 'styles');
+    const outputCss = join(out, `${key}.css`);
     const outputHtml = join(out, `${key}.html`);
     const outputIndexHtml = join(out, `${key}-index.html`);
-    return buildHtml(slidesDir, title, key, outputHtml, outputIndexHtml)
+    return buildCss(cssDir, key, outputCss, minify)
+        .then(() => buildHtml(slidesDir, title, key, outputHtml, outputIndexHtml));
 };
 
 const build = ({src, out, minify}) => {
     const assetsDir = join(src, 'assets');
-    const cssDir = join(src, 'styles');
-    const outputCss = join(out, 'index.css');
     return copyAsset(assetsDir, out)
-        .then(() => buildCss(cssDir, outputCss, minify))
-        .then(() => buildMain({src, key: 'devoxx', title: 'CSS is Awesome !', out}))
-        .then(() => buildMain({src, key: 'mixit', title: 'CSS is Awesome !', out}))
+        .then(() => buildMain({src, minify, key: 'devoxx', title: 'CSS is Awesome !', out}))
+        .then(() => buildMain({src, minify, key: 'mixit', title: 'CSS is Awesome !', out}))
 };
 
 const argv = require('yargs')

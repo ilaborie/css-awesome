@@ -1,5 +1,5 @@
 ---
-skip: mixit
+skip: devoxx
 ---
 
 ### Roadmap
@@ -9,5 +9,5 @@ skip: mixit
 * Pseudo éléments
 * Animations
 * Pseudo classes d'états
-* Support dans les navigateurs
+* Pur HTML ?
 

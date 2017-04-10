@@ -22,14 +22,17 @@
       min-width: 1em;
     }
     & > input[type=checkbox] ~ .body {
-      display: none;
+      height: auto;
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height .4s ease-out;
     }
 
     & > input[type=checkbox]:checked + header label::before {
       content: '▿';
     }
     & > input[type=checkbox]:checked ~ .body {
-      display: block;
+      max-height: 100vmin;
     }
 
     & > header {

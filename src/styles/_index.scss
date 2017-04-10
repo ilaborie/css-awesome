@@ -1,6 +1,3 @@
-@import "variables";
-@import "variables-devoxx";
-@import "variables-mixit";
 @import "nav";
 @import "slide";
 @import "navigation";
@@ -105,12 +102,15 @@ label {
 @import "pages/button-live";
 @import "pages/unit-commit-strip";
 @import "pages/popover";
+@import "pages/popover-demo";
 @import "pages/spinner";
 @import "pages/typings";
 @import "pages/state-list";
 @import "pages/checkbox";
+@import "pages/switch";
 @import "pages/collapsible";
 @import "pages/tabs";
+@import "pages/details";
 @import "pages/dialog";
 @import "pages/caniuse";
 @import "pages/end";

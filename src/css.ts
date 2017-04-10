@@ -12,8 +12,8 @@ const scss = (file): Promise<sass.Result> => new Promise((resolve, reject) => {
     sass.render({file}, (err, data) => err ? reject(err) : resolve(data))
 });
 
-export const css = (dir, minify = false): Promise<string> => {
-    const file = join(dir, 'index.scss');
+export const css = (dir, key, minify = false): Promise<string> => {
+    const file = join(dir, `${key}.scss`);
     const plugins = [
         customProperties({preserve: false}),
         autoprefixer(),

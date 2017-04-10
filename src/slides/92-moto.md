@@ -7,4 +7,5 @@ style: center
 * Revue de code
 * DRY
 * Clean Code
+* Single Responsibility Principle
 * ...

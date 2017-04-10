@@ -1,4 +1,6 @@
-.mixit {
+@import "variables";
+
+:root {
   --popoverName: 'MiXiT';
   --extraTag: '#MiXiT';
   --primary: #2c233d;
@@ -21,7 +23,6 @@
   --bgFooter: var(--primary);
   --fgFooter: var(--secondary);
 
-
   // slide
   --bgSlide: var(--bgBody);
   --fgSlide: var(--fgBody);
@@ -32,5 +33,6 @@
   section::before {
     background-origin: content-box;
   }
-
 }
+
+@import "index";

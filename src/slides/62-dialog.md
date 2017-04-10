@@ -2,6 +2,10 @@
 skip: devoxx
 ---
 
+```html
+<dialog id="diag">This is a dialog!</dialog>
+```
+
 <style scoped contenteditable="true">.editable dialog {
   box-shadow: .25em .25em .125em rgba(0, 0, 0, 0.42);
 }

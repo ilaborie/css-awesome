@@ -1,0 +1,42 @@
+#switch {
+
+  div {
+    position: relative;
+    input {
+      transform: scale(2);
+    }
+
+    .switch + label {
+      display: block;
+      position: relative;
+      padding: .1em;
+      width: 2em;
+      height: 1em;
+      background-color: #ccc;
+      border-radius: 1em;
+      border: medium solid var(--primary);
+      transition: 0.4s;
+
+      &::before{
+        display: block;
+        position: absolute;
+        content: '';
+        top: .1em;
+        left: .1em;
+        width: 1em;
+        height: 1em;
+
+        background-color: #fff;
+        border-radius: 100%;
+        transition: background 0.4s;
+      }
+    }
+  }
+  .switch:checked + label {
+    background-color: var(--primary);
+    &::before {
+      transform: translateX(1em);
+      background-color: var(--secondary);
+    }
+  }
+}

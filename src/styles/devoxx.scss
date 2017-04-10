@@ -1,4 +1,6 @@
-.devoxx {
+@import "variables";
+
+:root {
   --popoverName: 'DevoxxFR';
   --extraTag: '#DevoxxFR';
   --primary: #057FFA;
@@ -55,3 +57,5 @@
     box-shadow: 0 0 0 .05em var(--secondary), 0 0 0 .1em currentColor
   }
 }
+
+@import "index";
