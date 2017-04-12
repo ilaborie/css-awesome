@@ -7,43 +7,44 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>CSS is Awesome !</title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="mixit.css">
 </head>
 <body class="mixit">
-<div class="slides-nav"><nav><a href="#fyi" title="fyi">1</a>
-<a href="#cover" title="cover">2</a>
-<a href="#whoami" title="whoami">3</a>
-<a href="#least-power" title="least-power">4</a>
-<a href="#rules" title="rules">5</a>
-<a href="#uncovered" title="uncovered">6</a>
-<a href="#roadmap" title="roadmap">7</a>
-<a href="#preprocessors" title="preprocessors">8</a>
-<a href="#button-live" title="button-live">9</a>
-<a href="#be-smart" title="be-smart">10</a>
-<a href="#units" title="units">11</a>
-<a href="#unit-commit-strip" title="unit-commit-strip">12</a>
-<a href="#units-list" title="units-list">13</a>
-<a href="#holy-grails" title="holy-grails">14</a>
-<a href="#units-flexbox" title="units-flexbox">15</a>
-<a href="#pseudo-elements" title="pseudo-elements">16</a>
-<a href="#dining-philosophers" title="dining-philosophers">17</a>
-<a href="#border" title="border">18</a>
+<div class="slides-nav"><nav><a href="#fyi" title="fyi">0</a>
+<a href="#cover" title="cover">1</a>
+<a href="#whoami" title="whoami">2</a>
+<a href="#least-power" title="least-power">3</a>
+<a href="#rules" title="rules">4</a>
+<a href="#uncovered" title="uncovered">5</a>
+<a href="#roadmap2" title="roadmap2">6</a>
+<a href="#preprocessors" title="preprocessors">7</a>
+<a href="#button-live" title="button-live">8</a>
+<a href="#be-smart" title="be-smart">9</a>
+<a href="#units" title="units">10</a>
+<a href="#unit-commit-strip" title="unit-commit-strip">11</a>
+<a href="#units-list" title="units-list">12</a>
+<a href="#holy-grails" title="holy-grails">13</a>
+<a href="#units-flexbox" title="units-flexbox">14</a>
+<a href="#pseudo-elements" title="pseudo-elements">15</a>
+<a href="#dining-philosophers" title="dining-philosophers">16</a>
+<a href="#border" title="border">17</a>
+<a href="#popover" title="popover">18</a>
 <a href="#popover-demo" title="popover-demo">19</a>
-<a href="#popover" title="popover">20</a>
-<a href="#pseudo-element-takeaway" title="pseudo-element-takeaway">21</a>
-<a href="#animation" title="animation">22</a>
-<a href="#loader" title="loader">23</a>
-<a href="#typings" title="typings">24</a>
-<a href="#anim-end" title="anim-end">25</a>
-<a href="#state" title="state">26</a>
-<a href="#state-list" title="state-list">27</a>
-<a href="#checkbox" title="checkbox">28</a>
-<a href="#switch" title="switch">29</a>
-<a href="#collapsible" title="collapsible">30</a>
-<a href="#tabs1" title="tabs1">31</a>
-<a href="#tabs" title="tabs">32</a>
-<a href="#dialog" title="dialog">33</a>
-<a href="#states" title="states">34</a>
+<a href="#pseudo-element-takeaway" title="pseudo-element-takeaway">20</a>
+<a href="#animation" title="animation">21</a>
+<a href="#loader" title="loader">22</a>
+<a href="#typings" title="typings">23</a>
+<a href="#anim-end" title="anim-end">24</a>
+<a href="#state" title="state">25</a>
+<a href="#state-list" title="state-list">26</a>
+<a href="#checkbox" title="checkbox">27</a>
+<a href="#switch" title="switch">28</a>
+<a href="#collapsible" title="collapsible">29</a>
+<a href="#tabs1" title="tabs1">30</a>
+<a href="#tabs" title="tabs">31</a>
+<a href="#html" title="html">32</a>
+<a href="#details" title="details">33</a>
+<a href="#dialog" title="dialog">34</a>
 <a href="#caniuse" title="caniuse">35</a>
 <a href="#conclusion" title="conclusion">36</a>
 <a href="#outro" title="outro">37</a>
@@ -311,11 +312,11 @@
 </ul>
 
   <a href="#rules" class="previous"></a>
-  <a href="#roadmap" class="next"></a>
+  <a href="#roadmap2" class="next"></a>
 </section>
 
 <!-- Slide -->
-<section id="roadmap" class="">
+<section id="roadmap2" class="">
   <h3 id="roadmap">Roadmap</h3>
 <ul>
 <li>Utiliser un pré-processeur ?</li>
@@ -323,7 +324,7 @@
 <li>Pseudo éléments</li>
 <li>Animations</li>
 <li>Pseudo classes d&#39;états</li>
-<li>Support dans les navigateurs</li>
+<li>Pur HTML ?</li>
 </ul>
 
   <a href="#uncovered" class="previous"></a>
@@ -334,7 +335,7 @@
 <section id="preprocessors" class="center start-part">
   <h2 id="utiliser-un-pr-processeur-">Utiliser un pré-processeur ?</h2>
 
-  <a href="#roadmap" class="previous"></a>
+  <a href="#roadmap2" class="previous"></a>
   <a href="#button-live" class="next"></a>
 </section>
 
@@ -514,18 +515,6 @@ div.left { border-left-color: transparent; }
 	<div class="left"></div>
 </div>
   <a href="#dining-philosophers" class="previous"></a>
-  <a href="#popover-demo" class="next"></a>
-</section>
-
-<!-- Slide -->
-<section id="popover-demo" class="center">
-  <input type="text" required>
-<div class="hint">Required !!</div>
-
-<a href="#popover-demo">hover me</a>
-<div class="popover">Hello </div>
-
-  <a href="#border" class="previous"></a>
   <a href="#popover" class="next"></a>
 </section>
 
@@ -546,10 +535,27 @@ div.left { border-left-color: transparent; }
 </style>
 
 <div class="editable">
-	<div class="popover">Hello </div>
+    <div class="popover">Hello </div>
 </div>
 
-  <a href="#popover-demo" class="previous"></a>
+  <a href="#border" class="previous"></a>
+  <a href="#popover-demo" class="next"></a>
+</section>
+
+<!-- Slide -->
+<section id="popover-demo" class="around">
+  <fieldset>
+	<label for="txt">Input Text</label>
+	<input id="txt" type="text" required placeholder="mandatory field">
+	<div class="error">Mandatory</div>
+</fieldset>
+
+<div class="hint">
+	<a href="#popover-demo">hover me</a>
+	<div class="pop">Hello</div>
+</div>
+
+  <a href="#popover" class="previous"></a>
   <a href="#pseudo-element-takeaway" class="next"></a>
 </section>
 
@@ -566,7 +572,7 @@ div.left { border-left-color: transparent; }
 <li><a href="https://fr.wikipedia.org/wiki/D%C3%AEner_des_philosophes">Dîner des philosophes</a></li>
 </ul>
 
-  <a href="#popover" class="previous"></a>
+  <a href="#popover-demo" class="previous"></a>
   <a href="#animation" class="next"></a>
 </section>
 
@@ -691,18 +697,16 @@ fieldset input[type=checkbox] { opacity: 1; }
 </section>
 
 <!-- Slide -->
-<section id="switch" class="">
-  <style scoped contenteditable="true">input[type=checkbox].switch + label::before {
-  content: '';
-}
-input[type=checkbox].switch:checked + label::before {
-  content: '';
-}
-</style>
-
-<div class="editable">
-  <label>Switch OFF <input type="checkbox" class="switch"></label>
-  <label>Switch ON  <input type="checkbox" class="switch" checked></label>
+<section id="switch" class="around">
+  <div>
+	<label for="switch1">Switch OFF</label>
+	<input id="switch1" type="checkbox" class="switch">
+	<label for="switch1"></label>
+</div>
+<div>
+	<label for="switch2">Switch ON</label>
+	<input id="switch2" type="checkbox" class="switch" checked>
+	<label for="switch2"></label>
 </div>
   <a href="#checkbox" class="previous"></a>
   <a href="#collapsible" class="next"></a>
@@ -783,12 +787,50 @@ input[type=checkbox].switch:checked + label::before {
 	<div data-for="about">About page</div>
 </div>
   <a href="#tabs1" class="previous"></a>
+  <a href="#html" class="next"></a>
+</section>
+
+<!-- Slide -->
+<section id="html" class="center start-part">
+  <h2 id="pur-html-">Pur HTML ?</h2>
+
+  <a href="#tabs" class="previous"></a>
+  <a href="#details" class="next"></a>
+</section>
+
+<!-- Slide -->
+<section id="details" class="">
+  <pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">details</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">summary</span>&gt;</span>Des détails<span class="hljs-tag">&lt;/<span class="hljs-name">summary</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Plus d'infos à propos des détails.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">details</span>&gt;</span>
+</code></pre>
+<style scoped contenteditable="true">details {
+    border: medium solid currentcolor; 
+    border-radius: .25em;
+    width: 100%;
+}
+details summary {
+    background: #2c233d; color: #f8f8f8;
+}
+</style>
+
+<div class="editable">
+  <details>
+    <summary>Des détails</summary>
+    <p>Plus d&#39;infos à propos des détails.</p>
+  </details>
+</div>
+
+  <a href="#html" class="previous"></a>
   <a href="#dialog" class="next"></a>
 </section>
 
 <!-- Slide -->
 <section id="dialog" class="">
-  <style scoped contenteditable="true">.editable dialog {
+  <pre><code class="lang-html">&lt;<span class="hljs-keyword">dialog</span> id=<span class="hljs-string">"diag"</span>&gt;This is a <span class="hljs-keyword">dialog</span>!&lt;/<span class="hljs-keyword">dialog</span>&gt;
+</code></pre>
+<style scoped contenteditable="true">.editable dialog {
   box-shadow: .25em .25em .125em rgba(0, 0, 0, 0.42);
 }
 /* .editable dialog::backdrop {
@@ -802,28 +844,7 @@ input[type=checkbox].switch:checked + label::before {
   <dialog id="diag">This is a dialog!</dialog>
 </div>
 
-  <a href="#tabs" class="previous"></a>
-  <a href="#states" class="next"></a>
-</section>
-
-<!-- Slide -->
-<section id="states" class="around end-part">
-  <h4 id="collapsible-panel-en-pur-html-polyfill-https-github-com-chemerisuk-better-details-polyfill-">Collapsible panel en pur HTML <a href="https://github.com/chemerisuk/better-details-polyfill/">Polyfill</a></h4>
-<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">details</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">summary</span>&gt;</span>Des détails<span class="hljs-tag">&lt;/<span class="hljs-name">summary</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Plus d'infos à propos des détails.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">details</span>&gt;</span>
-</code></pre>
-<h4 id="dialog-en-pur-html-polyfill-https-github-com-googlechrome-dialog-polyfill-">Dialog en pur HTML <a href="https://github.com/GoogleChrome/dialog-polyfill">Polyfill</a></h4>
-<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">dialog</span>&gt;</span>
-  I'm a dialog!
-  <span class="hljs-tag">&lt;<span class="hljs-name">form</span> <span class="hljs-attr">method</span>=<span class="hljs-string">"dialog"</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"submit"</span> <span class="hljs-attr">value</span>=<span class="hljs-string">"Close"</span> /&gt;</span>
-  <span class="hljs-tag">&lt;/<span class="hljs-name">form</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">dialog</span>&gt;</span>
-</code></pre>
-
-  <a href="#dialog" class="previous"></a>
+  <a href="#details" class="previous"></a>
   <a href="#caniuse" class="next"></a>
 </section>
 
@@ -852,7 +873,7 @@ input[type=checkbox].switch:checked + label::before {
 	<dd>Animations <em>98</em></dd>
 </dl>
 
-  <a href="#states" class="previous"></a>
+  <a href="#dialog" class="previous"></a>
   <a href="#conclusion" class="next"></a>
 </section>
 
@@ -894,7 +915,7 @@ input[type=checkbox].switch:checked + label::before {
 <!-- Slide -->
 <section id="link2" class="center">
   <h2>
-    <a href="http://bit.ly/CssAwesome">http://bit.ly/CssAwesomeMiXiT</a> <br>
+    <a href="http://bit.ly/CssAwesomeMiXiT">http://bit.ly/CssAwesomeMiXiT</a> <br>
     <small><a href="https://github.com/ilaborie/css-awesome">https://github.com/ilaborie/css-awesome</a></small>
 </h2>
   <a href="#moto" class="previous"></a>
