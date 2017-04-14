@@ -29,29 +29,30 @@
 <a href="#dining-philosophers" title="dining-philosophers">16</a>
 <a href="#border" title="border">17</a>
 <a href="#popover" title="popover">18</a>
-<a href="#popover-demo" title="popover-demo">19</a>
-<a href="#pseudo-element-takeaway" title="pseudo-element-takeaway">20</a>
-<a href="#animation" title="animation">21</a>
-<a href="#loader" title="loader">22</a>
-<a href="#typings" title="typings">23</a>
-<a href="#anim-end" title="anim-end">24</a>
-<a href="#state" title="state">25</a>
-<a href="#state-list" title="state-list">26</a>
+<a href="#pseudo-element-takeaway" title="pseudo-element-takeaway">19</a>
+<a href="#animation" title="animation">20</a>
+<a href="#loader" title="loader">21</a>
+<a href="#typings" title="typings">22</a>
+<a href="#anim-end" title="anim-end">23</a>
+<a href="#state" title="state">24</a>
+<a href="#state-list" title="state-list">25</a>
+<a href="#popover-demo" title="popover-demo">26</a>
 <a href="#checkbox" title="checkbox">27</a>
 <a href="#switch" title="switch">28</a>
 <a href="#collapsible" title="collapsible">29</a>
-<a href="#tabs1" title="tabs1">30</a>
-<a href="#tabs" title="tabs">31</a>
+<a href="#tabs" title="tabs">30</a>
+<a href="#tabs1" title="tabs1">31</a>
 <a href="#html" title="html">32</a>
 <a href="#details" title="details">33</a>
 <a href="#dialog" title="dialog">34</a>
-<a href="#caniuse" title="caniuse">35</a>
-<a href="#conclusion" title="conclusion">36</a>
-<a href="#outro" title="outro">37</a>
-<a href="#moto" title="moto">38</a>
-<a href="#link2" title="link2">39</a>
-<a href="#learn" title="learn">40</a>
-<a href="#end" title="end">41</a></nav></div>
+<a href="#html-polyfill" title="html-polyfill">35</a>
+<a href="#caniuse" title="caniuse">36</a>
+<a href="#conclusion" title="conclusion">37</a>
+<a href="#outro" title="outro">38</a>
+<a href="#moto" title="moto">39</a>
+<a href="#link2" title="link2">40</a>
+<a href="#learn" title="learn">41</a>
+<a href="#end" title="end">42</a></nav></div>
 <main>  
 
 <!-- Slide -->
@@ -539,23 +540,6 @@ div.left { border-left-color: transparent; }
 </div>
 
   <a href="#border" class="previous"></a>
-  <a href="#popover-demo" class="next"></a>
-</section>
-
-<!-- Slide -->
-<section id="popover-demo" class="around">
-  <fieldset>
-	<label for="txt">Input Text</label>
-	<input id="txt" type="text" required placeholder="mandatory field">
-	<div class="error">Mandatory</div>
-</fieldset>
-
-<div class="hint">
-	<a href="#popover-demo">hover me</a>
-	<div class="pop">Hello</div>
-</div>
-
-  <a href="#popover" class="previous"></a>
   <a href="#pseudo-element-takeaway" class="next"></a>
 </section>
 
@@ -572,7 +556,7 @@ div.left { border-left-color: transparent; }
 <li><a href="https://fr.wikipedia.org/wiki/D%C3%AEner_des_philosophes">Dîner des philosophes</a></li>
 </ul>
 
-  <a href="#popover-demo" class="previous"></a>
+  <a href="#popover" class="previous"></a>
   <a href="#animation" class="next"></a>
 </section>
 
@@ -654,7 +638,7 @@ div.left { border-left-color: transparent; }
 <section id="state-list" class="center">
   <dl>
 
-	<dt><code>:target</code>, <code>:active</code>, <code>:focus</code>, <code>:empty</code>, ...</dt>
+	<dt><code>:target</code>, <code>:hover</code>, <code>:focus</code>, <code>:empty</code>, ...</dt>
 	<dd>Pour tous</dd>
 
 	<dt><code>:visited</code>, <code>:link</code>, ...</dt>
@@ -665,6 +649,23 @@ div.left { border-left-color: transparent; }
 
 </dl>
   <a href="#state" class="previous"></a>
+  <a href="#popover-demo" class="next"></a>
+</section>
+
+<!-- Slide -->
+<section id="popover-demo" class="around">
+  <fieldset>
+	<label for="txt">Input Text</label>
+	<input id="txt" type="text" required placeholder="mandatory field">
+	<div class="error">Mandatory</div>
+</fieldset>
+
+<div class="hint">
+	<a href="#popover-demo">hover me</a>
+	<div class="pop">Hello</div>
+</div>
+
+  <a href="#state-list" class="previous"></a>
   <a href="#checkbox" class="next"></a>
 </section>
 
@@ -692,7 +693,7 @@ fieldset input[type=checkbox] { opacity: 1; }
 </style>
 
 
-  <a href="#state-list" class="previous"></a>
+  <a href="#popover-demo" class="previous"></a>
   <a href="#switch" class="next"></a>
 </section>
 
@@ -744,6 +745,27 @@ fieldset input[type=checkbox] { opacity: 1; }
 	</div>
 </div>
   <a href="#switch" class="previous"></a>
+  <a href="#tabs" class="next"></a>
+</section>
+
+<!-- Slide -->
+<section id="tabs" class="">
+  <h3>Démo onglets</h3>
+
+<div class="tabs">
+	<input type="radio" name="tab" id="home">
+	<input type="radio" name="tab" id="projects" checked>
+	<input type="radio" name="tab" id="about">
+	<nav>
+		<label for="home">Home</label>
+		<label for="projects">Projects</label>
+		<label for="about">About</label>
+	</nav>
+	<div data-for="home">Home page</div>
+	<div data-for="projects">Projects page</div>
+	<div data-for="about">About page</div>
+</div>
+  <a href="#collapsible" class="previous"></a>
   <a href="#tabs1" class="next"></a>
 </section>
 
@@ -765,28 +787,7 @@ fieldset input[type=checkbox] { opacity: 1; }
 &lt;/div&gt;
 </code></pre>
 
-  <a href="#collapsible" class="previous"></a>
-  <a href="#tabs" class="next"></a>
-</section>
-
-<!-- Slide -->
-<section id="tabs" class="">
-  <h3>Démo onglets</h3>
-
-<div class="tabs">
-	<input type="radio" name="tab" id="home">
-	<input type="radio" name="tab" id="projects" checked>
-	<input type="radio" name="tab" id="about">
-	<nav>
-		<label for="home">Home</label>
-		<label for="projects">Projects</label>
-		<label for="about">About</label>
-	</nav>
-	<div data-for="home">Home page</div>
-	<div data-for="projects">Projects page</div>
-	<div data-for="about">About page</div>
-</div>
-  <a href="#tabs1" class="previous"></a>
+  <a href="#tabs" class="previous"></a>
   <a href="#html" class="next"></a>
 </section>
 
@@ -794,7 +795,7 @@ fieldset input[type=checkbox] { opacity: 1; }
 <section id="html" class="center start-part">
   <h2 id="pur-html-">Pur HTML ?</h2>
 
-  <a href="#tabs" class="previous"></a>
+  <a href="#tabs1" class="previous"></a>
   <a href="#details" class="next"></a>
 </section>
 
@@ -845,6 +846,17 @@ details summary {
 </div>
 
   <a href="#details" class="previous"></a>
+  <a href="#html-polyfill" class="next"></a>
+</section>
+
+<!-- Slide -->
+<section id="html-polyfill" class="around end-part">
+  <ul>
+<li><a href="https://github.com/chemerisuk/better-details-polyfill/">Collapsible Panel Polyfill</a></li>
+<li><a href="https://github.com/GoogleChrome/dialog-polyfill">Dialog Polyfill</a></li>
+</ul>
+
+  <a href="#dialog" class="previous"></a>
   <a href="#caniuse" class="next"></a>
 </section>
 
@@ -873,7 +885,7 @@ details summary {
 	<dd>Animations <em>98</em></dd>
 </dl>
 
-  <a href="#dialog" class="previous"></a>
+  <a href="#html-polyfill" class="previous"></a>
   <a href="#conclusion" class="next"></a>
 </section>
 
