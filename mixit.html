@@ -40,8 +40,8 @@
 <a href="#checkbox" title="checkbox">27</a>
 <a href="#switch" title="switch">28</a>
 <a href="#collapsible" title="collapsible">29</a>
-<a href="#tabs" title="tabs">30</a>
-<a href="#tabs1" title="tabs1">31</a>
+<a href="#tabs1" title="tabs1">30</a>
+<a href="#tabs" title="tabs">31</a>
 <a href="#html" title="html">32</a>
 <a href="#details" title="details">33</a>
 <a href="#dialog" title="dialog">34</a>
@@ -745,27 +745,6 @@ fieldset input[type=checkbox] { opacity: 1; }
 	</div>
 </div>
   <a href="#switch" class="previous"></a>
-  <a href="#tabs" class="next"></a>
-</section>
-
-<!-- Slide -->
-<section id="tabs" class="">
-  <h3>Démo onglets</h3>
-
-<div class="tabs">
-	<input type="radio" name="tab" id="home">
-	<input type="radio" name="tab" id="projects" checked>
-	<input type="radio" name="tab" id="about">
-	<nav>
-		<label for="home">Home</label>
-		<label for="projects">Projects</label>
-		<label for="about">About</label>
-	</nav>
-	<div data-for="home">Home page</div>
-	<div data-for="projects">Projects page</div>
-	<div data-for="about">About page</div>
-</div>
-  <a href="#collapsible" class="previous"></a>
   <a href="#tabs1" class="next"></a>
 </section>
 
@@ -787,7 +766,28 @@ fieldset input[type=checkbox] { opacity: 1; }
 &lt;/div&gt;
 </code></pre>
 
-  <a href="#tabs" class="previous"></a>
+  <a href="#collapsible" class="previous"></a>
+  <a href="#tabs" class="next"></a>
+</section>
+
+<!-- Slide -->
+<section id="tabs" class="">
+  <h3>Démo onglets</h3>
+
+<div class="tabs">
+	<input type="radio" name="tab" id="home">
+	<input type="radio" name="tab" id="projects" checked>
+	<input type="radio" name="tab" id="about">
+	<nav>
+		<label for="home">Home</label>
+		<label for="projects">Projects</label>
+		<label for="about">About</label>
+	</nav>
+	<div data-for="home">Home page</div>
+	<div data-for="projects">Projects page</div>
+	<div data-for="about">About page</div>
+</div>
+  <a href="#tabs1" class="previous"></a>
   <a href="#html" class="next"></a>
 </section>
 
@@ -795,7 +795,7 @@ fieldset input[type=checkbox] { opacity: 1; }
 <section id="html" class="center start-part">
   <h2 id="pur-html-">Pur HTML ?</h2>
 
-  <a href="#tabs1" class="previous"></a>
+  <a href="#tabs" class="previous"></a>
   <a href="#details" class="next"></a>
 </section>
 
@@ -850,7 +850,7 @@ details summary {
 </section>
 
 <!-- Slide -->
-<section id="html-polyfill" class="around end-part">
+<section id="html-polyfill" class="around-list end-part">
   <ul>
 <li><a href="https://github.com/chemerisuk/better-details-polyfill/">Collapsible Panel Polyfill</a></li>
 <li><a href="https://github.com/GoogleChrome/dialog-polyfill">Dialog Polyfill</a></li>
