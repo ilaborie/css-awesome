@@ -1,5 +1,6 @@
 ---
 style: center
+skip: print
 ---
 
 

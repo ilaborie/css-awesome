@@ -1,20 +1,21 @@
 ---
 style: center
-skip: print
+skip: devoxx mixit
 ---
 
 <style scoped contenteditable="true">.popover {
   position: relative;
   background: teal;
 }
-/*.popover::before {
+.popover::before {
   position: absolute;
-  z-index: 0;
+  z-index: -1;
   content: '';
-  top: 0em; left: 0em;
-  border: 1em solid red;
-  border-top-color: red;
-}*/
+  top: 1em; left: 1em;
+  border: .8em solid transparent;
+  border-top-color: teal;
+  transform: skew(-30deg);
+}
 </style>
 
 <div class="editable">

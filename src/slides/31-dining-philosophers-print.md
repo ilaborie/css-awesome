@@ -1,6 +1,6 @@
 ---
 style: center
-skip: print
+skip: devoxx mixit
 ---
 
 ```html
@@ -9,10 +9,11 @@ skip: print
 </div>
 ```
 
-<style scoped contenteditable="true">.table {
+<style scoped contenteditable="true">.table::before, .table::after {
   color: gray;
-  font-size: 1.5em;
-  /*content: '';*/
+  font-size: 2.5em;
+  content: '⋔';
+  transform: rotate(180deg);
 }</style>
 
 <div class="diner">

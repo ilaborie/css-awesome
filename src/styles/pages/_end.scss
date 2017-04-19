@@ -1,5 +1,7 @@
-$size: 48vh;
-#end {
+$font-size: 80pt;
+$size: $font-size * 3.55;
+
+#end, #end-print {
     &:hover {
         animation: 10s rainbow infinite;
     }
@@ -10,7 +12,7 @@ $size: 48vh;
         width: $size;
         height: $size;
         border: solid 1vh currentColor;
-        font-size: $size / 3.55;
+        font-size: $font-size ;
         padding: 2vh;
         font-family: arial, sans-serif;
         font-weight: bold;

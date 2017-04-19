@@ -1,9 +1,26 @@
 #switch {
 
-  div {
+  div.col2 {
+    display: flex;
+    justify-content: space-between;
+    pre {
+      margin: 0;
+    }
+    pre + pre {
+      margin-left: 2em;
+    }
+  }
+  pre {
+    font-size: 50%;
+  }
+
+  div.editable {
+    justify-content: center;
     position: relative;
+    max-height: 2em;
     input {
       transform: scale(2);
+      margin: 0 1em;
     }
 
     .switch + label {
@@ -17,7 +34,7 @@
       border: medium solid var(--primary);
       transition: 0.4s;
 
-      &::before{
+      &::before {
         display: block;
         position: absolute;
         content: '';
@@ -31,12 +48,14 @@
         transition: background 0.4s;
       }
     }
-  }
-  .switch:checked + label {
-    background-color: var(--primary);
-    &::before {
-      transform: translateX(1em);
-      background-color: var(--secondary);
+
+    .switch:checked + label {
+      background: var(--primary);
+
+      &::before {
+        transform: translateX(1em);
+        background-color: var(--secondary);
+      }
     }
   }
 }

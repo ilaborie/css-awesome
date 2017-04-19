@@ -1,6 +1,6 @@
 ---
 style: around end-part
-skip: mixit
+skip: mixit print
 ---
 
 #### Collapsible panel en pur HTML [Polyfill](https://github.com/chemerisuk/better-details-polyfill/)

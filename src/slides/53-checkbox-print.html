@@ -1,5 +1,5 @@
 ---
-skip: print
+skip: devoxx mixit
 ---
 
 <div class="editable">
@@ -8,17 +8,17 @@ skip: print
     <footer><cite>Ada Lovelace</cite></footer>
   </blockquote>
   <fieldset>
-    <input type="checkbox" id="like">
-    <label for="like"></label>
+    <input type="checkbox" id="like-print" checked>
+    <label for="like-print"></label>
   </fieldset>
 </div>
 
 <style scoped contenteditable="true">.editable input[type=checkbox] + label::before {
-  content: '';
+  content: 'Click if you like it';
 }
-.editable input[type=checkbox] + label::before {
-  content: '';
+.editable input[type=checkbox]:checked + label::before {
+  content: '<3 !';
 }
-fieldset input[type=checkbox] { opacity: 1; }
+fieldset input[type=checkbox] { opacity: 0; }
 </style>
 

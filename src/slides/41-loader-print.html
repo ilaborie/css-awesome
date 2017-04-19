@@ -1,16 +1,15 @@
 ---
-skip: print
+skip: devoxx mixit
 ---
 
 <style scoped contenteditable="true">.loader {
   line-height: 1.5;
-  overflow: auto; box-shadow: 0 0 0 .05em red;
+  overflow: auto;
 }
 .loader::before {
   display: inline-table;
-  /*content: '0\a 1\a 2\a 3\a 4\a 5\a 6\a 7\a 8\a 9';*/
-  /*content: '⠋\a ⠙\a ⠹\a ⠸\a ⠼\a ⠴\a ⠦\a ⠧\a ⠇\a ⠏';*/
-  /*animation: spin 5s infinite;*/
+  content: '⠋\a ⠙\a ⠹\a ⠸\a ⠼\a ⠴\a ⠦\a ⠧\a ⠇\a ⠏';
+  animation: spin 1s steps(10, end) infinite;
 }
 @keyframes spin { to { transform: translateY(-15em); } }
 </style>

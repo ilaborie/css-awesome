@@ -63,19 +63,20 @@ main > section {
   // Counter
   &::after {
     counter-increment: section;
-    content: counter(section);
+    content: '# ' counter(section);
     position: absolute;
-    width: 1em;
+    width: 4em;
     height: 1em;
     z-index: 2;
     padding: .125rem;
     border-radius: 50%;
-    font-size: 50%;
-    font-family: Zapfino, fantasy;
+    font-size: 60%;
+    font-family: "Pixeled", fantasy;
+    //margin-top: 1em;
     color: var(--fgSlideCounter);
     @include textShadow;
     top: 1vh;
-    left: 95vw;
+    left: 92vw;
   }
 
   &.center {

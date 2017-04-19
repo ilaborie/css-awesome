@@ -113,6 +113,7 @@ label {
 @import "pages/details";
 @import "pages/dialog";
 @import "pages/caniuse";
+@import "pages/moto";
 @import "pages/end";
 @import "pages/link";
 
@@ -129,12 +130,5 @@ body.index {
     &::before {
       content: counter(a) ' ';
     }
-  }
-}
-
-#moto {
-  h2::before {
-    content: '👉 ';
-    font-size: 1.25em;
   }
 }

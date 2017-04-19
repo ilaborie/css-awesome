@@ -3,13 +3,63 @@ skip: devoxx
 style: around
 ---
 
-<div>
-	<label for="switch1">Switch OFF</label>
-	<input id="switch1" type="checkbox" class="switch">
+<pre><code class="lang-html">&lt;<span class="hljs-keyword">label</span> <span class="hljs-keyword">for</span>=<span
+		class="hljs-string">"switch1"</span>&gt;Switch&lt;/<span class="hljs-keyword">label</span>&gt;
+&lt;<span class="hljs-keyword">input</span> id=<span class="hljs-string">"switch1"</span> <span class="hljs-keyword">type</span>=<span
+			class="hljs-string">"checkbox"</span> <span class="hljs-keyword">class</span>=<span
+			class="hljs-string">"switch"</span>&gt;
+&lt;<span class="hljs-keyword">label</span> <span class="hljs-keyword">for</span>=<span
+			class="hljs-string">"switch1"</span>&gt;&lt;/<span class="hljs-keyword">label</span>&gt;
+</code></pre>
+
+
+
+<div class="editable">
+	<label for="switch1">Switch</label>
+	<input id="switch1" type="checkbox" class="switch" checked>
 	<label for="switch1"></label>
 </div>
-<div>
-	<label for="switch2">Switch ON</label>
-	<input id="switch2" type="checkbox" class="switch" checked>
-	<label for="switch2"></label>
+
+
+<div class="col2">
+
+<pre><code class="lang-css"><span class="hljs-selector-class">.switch</span> + <span
+		class="hljs-selector-tag">label</span> {
+    <span class="hljs-attribute">display</span>: block;
+    <span class="hljs-attribute">position</span>: relative;
+    <span class="hljs-attribute">padding</span>: .<span class="hljs-number">1em</span>;
+    <span class="hljs-attribute">width</span>: <span class="hljs-number">2em</span>; <span
+			class="hljs-attribute">height</span>: <span class="hljs-number">1em</span>;
+    <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#ccc</span>;
+    <span class="hljs-attribute">border-radius</span>: <span class="hljs-number">1em</span>;
+    <span class="hljs-attribute">border</span>: medium solid <span class="hljs-number">#2c233d</span>;
+    <span class="hljs-attribute">transition</span>: <span class="hljs-number">0.4s</span>;
+}
+
+<span class="hljs-selector-class">.switch</span><span class="hljs-selector-pseudo">:checked</span> + <span
+			class="hljs-selector-tag">label</span> {
+ <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#2c233d</span>;
+}
+</code></pre>
+
+	<pre><code class="lang-css"><span class="hljs-selector-class">.switch</span> + <span class="hljs-selector-tag">label</span><span
+			class="hljs-selector-pseudo">::before</span> {
+    <span class="hljs-attribute">display</span>: block;
+    <span class="hljs-attribute">position</span>: absolute;
+    <span class="hljs-attribute">content</span>: <span class="hljs-string">''</span>;
+    <span class="hljs-attribute">top</span>: .<span class="hljs-number">1em</span>; <span
+			class="hljs-attribute">left</span>: .<span class="hljs-number">1em</span>;
+    <span class="hljs-attribute">width</span>: <span class="hljs-number">1em</span>; <span
+			class="hljs-attribute">height</span>: <span class="hljs-number">1em</span>;
+    <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#fff</span>;
+    <span class="hljs-attribute">border-radius</span>: <span class="hljs-number">50%</span>;
+    <span class="hljs-attribute">transition</span>: background <span class="hljs-number">0.4s</span>;
+}
+<span class="hljs-selector-class">.switch</span><span class="hljs-selector-pseudo">:checked</span> + <span
+			class="hljs-selector-tag">label</span><span class="hljs-selector-pseudo">::before</span> {
+  <span class="hljs-attribute">transform</span>: <span class="hljs-built_in">translateX</span>(1em);
+  <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#faf8f8</span>;
+}
+</code></pre>
+
 </div>

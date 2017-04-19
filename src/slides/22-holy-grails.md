@@ -1,3 +1,7 @@
+---
+skip: print
+---
+
 ### Holy Grail Layout
 
 ```html
