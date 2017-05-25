@@ -1,0 +1,50 @@
+@import "variables";
+
+:root {
+  --popoverName: 'BBL Cegedim';
+  --extraTag: '#BBL';
+  --primary: #3E342A;
+  --secondary: #ba8e64;
+  --alternate1: #3E342A;
+  --alternate2: #3E342A;
+
+  --fontBody: Lato, "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  --logo: inline('images/BBL_Toulouse.jpg');
+
+  --emphase: var(--alternate2);
+
+  --bgBody: transparent;
+
+  --fgBody: var(--primary);
+  --fontQuote: Baskerville, serif;
+
+  --fontHeader: Ampersand, OpenSans, Arial, sans-serif;
+  --borderHeader: var(--primary);
+  --fontSizeHeader: 1.75em;
+  --bgFooter: #fff;
+  --fgFooter: var(--alternate2);
+
+  // slide
+  --bgSlide: var(--bgBody);
+  --fgSlide: var(--fgBody);
+  --bgSlideHeader: var(--primary);
+  --fgSlideHeader: var(--secondary);
+  --fgSlideCounter: var(--secondary);
+
+  section::before {
+    background-origin: content-box;
+  }
+}
+
+@import "index";
+
+body.bbl {
+  background-color: var(--secondary);
+  background-image: linear-gradient(90deg, rgba(255,255,255,.07) 50%, transparent 50%),
+  linear-gradient(90deg, rgba(255,255,255,.13) 50%, transparent 50%),
+  linear-gradient(90deg, transparent 50%, rgba(255,255,255,.17) 50%),
+  linear-gradient(90deg, transparent 50%, rgba(255,255,255,.19) 50%);
+  background-size: 13px, 29px, 37px, 53px;
+
+  text-shadow: 1px 1px 1px white;
+}

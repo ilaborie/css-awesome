@@ -15,7 +15,7 @@ skip: devoxx
     width: 100%;
 }
 details summary {
-    background: #2c233d; color: #f8f8f8;
+    background: #080808; color: #f8f8f8;
 }
 </style>
 

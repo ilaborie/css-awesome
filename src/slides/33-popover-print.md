@@ -1,6 +1,6 @@
 ---
 style: center
-skip: devoxx mixit
+skip: devoxx mixit bbl
 ---
 
 <style scoped contenteditable="true">.popover {

@@ -43,7 +43,7 @@ const buildMain = ({src, minify, key, title, out}) => {
 
 const build = ({src, out, minify}) => {
     const assetsDir = join(src, 'assets');
-    const keys = ['devoxx', 'mixit', 'print'];
+    const keys = ['devoxx', 'mixit', 'bbl', 'print'];
     return copyAsset(assetsDir, out)
         .then(() => keys.map(key => buildMain({src, minify, key, title: 'CSS is Awesome !', out})))
         .then(promises => Promise.all(promises))
