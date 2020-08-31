@@ -10,9 +10,6 @@
     "serve": "npm run start & tsc -w & nodemon js/index.js",
     "publish": "gh-pages --dist dist/"
   },
-  "engines": {
-    "node": "^7.0.0"
-  },
   "repository": {},
   "author": "Igor Laborie <ilaborie@gmail.com>",
   "license": "Apache-2.0",
@@ -25,20 +22,20 @@
     "@types/rimraf": "^0.0.28",
     "@types/yargs": "^6.6.0",
     "autoprefixer": "^6.7.7",
-    "cssnano": "^3.10.0",
-    "gh-pages": "^0.12.0",
+    "cssnano": "^4.1.10",
+    "gh-pages": "^3.1.0",
     "highlight.js": "^9.10.0",
     "lite-server": "^2.3.0",
-    "marked": "^0.3.6",
+    "marked": "^1.1.1",
     "mkdirp": "^0.5.1",
-    "node-sass": "^4.5.2",
-    "nodemon": "^1.11.0",
+    "node-sass": "^4.14.1",
+    "nodemon": "^2.0.4",
     "postcss": "^5.2.16",
-    "postcss-assets": "^4.1.0",
+    "postcss-assets": "^5.0.0",
     "postcss-custom-properties": "^5.0.2",
     "rimraf": "^2.6.1",
     "typescript": "^2.2.2",
-    "yargs": "^7.0.2"
+    "yargs": "^15.4.1"
   },
   "browserslist": [
     "> 2% in FR"
