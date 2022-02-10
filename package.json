@@ -28,7 +28,7 @@
     "lite-server": "^2.3.0",
     "marked": "^4.0.10",
     "mkdirp": "^0.5.1",
-    "node-sass": "^4.14.1",
+    "node-sass": "^7.0.0",
     "nodemon": "^2.0.4",
     "postcss": "^8.2.13",
     "postcss-assets": "^5.0.0",
