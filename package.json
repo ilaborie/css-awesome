@@ -29,7 +29,7 @@
     "marked": "^4.0.10",
     "mkdirp": "^0.5.1",
     "node-sass": "^7.0.0",
-    "nodemon": "^2.0.4",
+    "nodemon": "^2.0.20",
     "postcss": "^8.2.13",
     "postcss-assets": "^5.0.0",
     "postcss-custom-properties": "^5.0.2",
